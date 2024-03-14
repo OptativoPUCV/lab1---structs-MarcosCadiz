@@ -63,11 +63,11 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int *resultado = (int *)malloc(contPares * sizeof(int));
   if(resultado == NULL) exit(EXIT_FAILURE);
 
-  int temp = 0;
+  int indice = 0;
   for (int i = 0; i < size; i++){
     if (arr[i] % 2 == 0){
-      resultado[temp] = arr[i];
-      temp++;
+      resultado[indice] = arr[i];
+      indice++;
     }
   }
   *newSize = contPares;
