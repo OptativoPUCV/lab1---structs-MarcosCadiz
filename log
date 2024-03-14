@@ -17,3 +17,20 @@ Thu 14 Mar 2024 08:50:37 PM UTC:
  tests:  0|4
 total_score: 30/70
 5db7ffa
+Thu 14 Mar 2024 08:59:19 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:85:21: error: unused variable ‘k’ [-Werror=unused-variable]
+   85 |   int i = 0, j = 0, k = 0;
+      |                     ^
+exercises.c:85:14: error: unused variable ‘j’ [-Werror=unused-variable]
+   85 |   int i = 0, j = 0, k = 0;
+      |              ^
+exercises.c:85:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   85 |   int i = 0, j = 0, k = 0;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+6933f48
